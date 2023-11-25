@@ -7,12 +7,12 @@ $persona1 = new Persona("Alberto", 49);
 
 /*ahora vemos los atributos usando el getNombre y getEdad*/
 echo "El nombre de la persona es " . $persona1->getNombre() . PHP_EOL;
-echo "El nombre de la persona es " . $persona1->getEdad() . PHP_EOL;
+echo "La edad de la persona es " . $persona1->getEdad() . PHP_EOL;
 /*Vamos a sobreescribir el nombre*/
 $persona1->setEdad(29); //Ojalá
 /*Obtenemos los atributos actualizados*/
 echo "El nombre de la persona es " . $persona1->getNombre() . PHP_EOL;
-echo "El nombre de la persona es " . $persona1->getEdad() . PHP_EOL;
+echo "La edad de la persona es " . $persona1->getEdad() . PHP_EOL;
 /*La clase Perro está creada con funciones mágicas __set y __get*/
 /*Instanciamos un perro*/
 $perro1 = new Perro();// no es necesario declarar valores para ningún atributo
