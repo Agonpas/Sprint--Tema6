@@ -35,4 +35,14 @@ echo "La edad del perro es de " . $perro1->__get("edad") . " años." . PHP_EOL;
 echo "El perro está vacunado? " . $perro1->__get("vacuna") . PHP_EOL;
 /* por último usamos la función para mostrar el Array con todos los atributos y sus valores almacenados*/
 $perro1->mostrarAtributos();
+/*Vamos a crear otro perro a ver que pasa*/
+$perro2 = new Perro();
+$perro2->nombre = "Lassie";
+$perro2->vacuna = true;
+$perro2->edad = 10;
+echo "El nombre del perro es " . $perro2->__get("nombre") . PHP_EOL;
+echo "La raza del perro es " . $perro2->__get("raza") . PHP_EOL;
+echo "La edad del perro es de " . $perro2->__get("edad") . " años." . PHP_EOL;
+echo "El perro esta vacunado " . $perro2->__get("vacuna") . PHP_EOL;
+$perro2->mostrarAtributos();
 ?>
